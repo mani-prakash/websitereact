@@ -1,0 +1,21 @@
+{
+  "name": "zophopweb",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "prakash_mani <mani.prakash2001@zophop.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "react": "^15.1.0"
+  }
+}

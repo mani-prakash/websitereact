@@ -1,0 +1,246 @@
+@font-face {
+    font-family: robotoB;
+    src: url('roboto/Roboto-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: robotoM;
+    src: url('roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: robotoR;
+    src: url('roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: robotoLight;
+    src: url('roboto/Roboto-Light.ttf') format('truetype');
+}
+body{
+    margin: 0px;
+    background-color: #ebebe0;
+    font-size: 60px;
+}
+body {
+    font-family: robotoM, sans-serif;
+    background-color: #ebebe0;
+}
+.routeStop{
+
+}
+.AppHeader{
+    position: fixed;
+    top :0;
+    left:0;
+    z-index: 1000;
+    background-color: #689F38;
+    color: #ffffff;
+    width: 100%;
+    font-family: robotoM;
+    font-size: 48px;
+    vertical-align: middle;
+}
+.mainHeader{
+    height: 168px;
+    width : 100%;
+}
+.sideHeader{
+    position: fixed;
+    font-family: robotoM;
+    top : 60px;
+    left: 0;
+    width: 50%;
+    height: 90%;
+    z-index: 1000;
+    background-color: #000066;
+}
+.schedulerMode{
+    //display: inline-block;
+    //margin: 2px;
+    padding: 4px auto;
+    margin-bottom: 0px;
+    padding-bottom: 24px;
+}
+.ModeUnSelected{
+   color : #a4c588;
+}
+.ModeSelected{
+    color : #FFFFFF;
+    border-bottom: solid 6px #FFFFFF;
+}
+#page{
+
+}
+.modeCard{
+    background-color: #FFFFFF;
+    width: 100%;
+    cursor:pointer;
+    font-size: 42px;
+    font-family: robotoM;
+}
+.borderBottom{
+    border-bottom: solid 1px rgba(0,0,0,0.1) ;
+}
+.modeCardTuple{
+    height:120px;
+    display:table;
+    vertical-align:middle;
+    text-align: center;
+}
+.modeCardTuple > span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.cursorPointer{
+    cursor:pointer;
+}
+.modeCard > .block{
+    //border-bottom: 2px solid;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000066;
+}
+
+.headerItem{
+    width: 40px;
+    height: 40px;
+}
+input[key='react-autowhatever-1-input']
+{
+    background-image:url(../images/arrowBack.png);
+    background-position:left top;  padding-left:15px;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+}
+.inputField{
+    width:100%;
+    height: 100px;
+    font-size: 60px;
+}
+div[key='BUS']
+{
+    color: #FFFFFF;
+}
+input[type=text] {padding:5px; border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+input[type=text]:focus {border-color:#333; }
+
+.width100{
+    width: 100%;
+}
+.tripCard{
+    background-color: #FFFFFF;
+    margin: 6px auto;
+    width: 98%;
+}
+.tripImage{
+    height: 40px;
+    width: 32px;
+    display: inline-block;
+}
+.tripTime{
+    display: inline-block;
+}
+.FontSize{
+    font-size: 40px;
+}
+.card{
+    background-color: #FFFFFF;
+    margin: 36px 0px;
+    box-shadow: 0px 10px #d3d3d3;
+}
+.cardTuple{
+    //border-bottom: solid #ebebe0 1px;
+    padding: 20px 24px;
+    min-height: 144px;
+    font-size: 48px;
+}
+.hrTripPlanner{
+    margin : 0px 0px;
+}
+.cardHeader{
+    padding: 24px;
+    color:  #FFFFFF;
+    font-family: robotoM;
+    font-size: 48px;
+    width: 100%;
+}
+
+.verticalCenter{
+    display: table;
+    text-align: left;
+}
+
+.verticalCenter > span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.verticalCenter > div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.verticalBottom{
+    display: table;
+    text-align: center;
+}
+
+.verticalBottom > span{
+    display: table-cell;
+    vertical-align: bottom;
+}
+.verticalBottom > div{
+    display: table-cell;
+    vertical-align: bottom;
+}
+.verticalElement {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.tripPlaanerDetails{
+    font-family: robotoM;
+}
+.navigationTuple{
+    height: 168px;
+}
+.schedulerModeTab{
+    display: inline-block;
+//margin: 2px;
+    height: 144px;
+    padding: 4px 36px;
+    margin-bottom: 0px;
+    padding-bottom: 24px;
+}
+.schedulerModesTab{
+    height:144px;
+    text-align:left;
+    min-width:100%;
+    overflow-x:scroll;
+    overflow-y:hidden;
+}
+.inputField{
+    font-size: 42px;
+    padding: 16px;
+    font-family: robotoR;
+    width: 100%;
+    height: 144px;
+    color: rgba(0,0,0,0.3);
+    background-color: #FFFFFF;
+    text-align: left;
+}
+#modeTab::-webkit-scrollbar {
+    display: none;
+}
+.schedulerModesTab::-webkit-scrollbar {
+    display: none;
+}
+.autoCompleteTuple{
+    width: 100%;
+    height: 168px;
+}
+.listTuple{
+    font-size: 48px;
+    font-family: robotoM;
+}

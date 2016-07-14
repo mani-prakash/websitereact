@@ -1,0 +1,7 @@
+$primary-color:green;
+@media only screen and (-webkit-device-pixel-ratio: 1.0){
+  $primary-color:red;
+}
+h1{
+  color: $primary-color;
+}

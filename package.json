@@ -1,0 +1,42 @@
+{
+  "name": "zophoptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "bluebird": "^3.4.0",
+    "install": "^0.8.1",
+    "npm": "^3.9.3",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.0",
+    "babel-runtime": "^6.9.0",
+    "bluebird": "^3.4.0",
+    "bootbox": "^4.4.0",
+    "firebase": "^2.4.2",
+    "flux": "^2.1.1",
+    "jquery": "^3.1.0",
+    "lodash": "^4.13.1",
+    "radium": "^0.17.1",
+    "react": "^15.1.0",
+    "react-autocomplete": "^1.0.0-rc4",
+    "react-autosuggest": "^3.7.4",
+    "react-dom": "^15.1.0"
+  }
+}
