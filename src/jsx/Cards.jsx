@@ -136,7 +136,7 @@ export class CabsAndAuto extends React.Component{
             }
         }
         let tuples = list.map(function(cab,index){
-                        return (<div key={index} className='container-fluid cardTuple borderBottom' style={{cardTuple:24,height:Constants.HEADER_SPACE}}>
+                        return (<div key={index} className='container-fluid cardTuple borderBottom' style={{height:Constants.HEADER_SPACE}}>
                             <div className='col-xs-6 text-left verticalElement'>
                                 <img src={Constants.IMAGESRC.UBER} />
                                 &nbsp;
@@ -186,13 +186,15 @@ export class LiveTripsCard extends React.Component{
         let trips = this.state['liveTrips'];
         let divs = trips.map(function(data,index){
                         return (
-                            <div className='cardTuple verticalCenter' key={index}>
-                                <div className='col-xs-6 text-left'>
+                            <div className='cardTuple borderBottom verticalCenter' style={{width:'100%'}} key={index}>
+                                <div className='' style={{width:'60%'}}>
                                     <img src={Constants.MODE_IMAGES[data['_mode']]} />
                                     &nbsp;
                                     {data['_routeName']}
                                 </div>
-                                <div className='col-xs-6 text-right verticalElement'></div>
+                                <div className='text-left' style={{width:'40%'}}>
+                                    334
+                                </div>
                             </div>
                         );
                     });
@@ -200,8 +202,6 @@ export class LiveTripsCard extends React.Component{
         return divs;
     }
     setStateFromStore(){
-        console.log('=====+++++++++++++++++++++++++++++++++===');
-        console.log('setStateFromStore');
         let trips = Store.getLiveTrips(4);
         this.setState({
             liveTrips : trips
@@ -220,15 +220,14 @@ export class LiveTripsCard extends React.Component{
             return (<div></div>);
         }
         return (<div style={{fontSize:Constants.FONT_SIZE}} className='card'>
-            <div className='cardHeader verticalCenter' style={{backgroundColor:'#D1B72E', height: Constants.CARD_HEADER_HEIGHT, width:'100%'}}>
+            <div className='cardHeader verticalCenter' style={{backgroundColor:'#273238', height: Constants.CARD_HEADER_HEIGHT, width:'100%'}}>
                 Live Trips
             </div>
-            <div>
                 {list}
-            </div>
+
             <div className='cardTuple verticalCenter' onClick={() => Controller.loadScreen(Constants.CABS_SCREEN)}>
                     <span style={{color:'#d3d3d3',fontSize:'32px'}}>
-                        <img style={{height:48,width:48}} src={Constants.assets+'/more_trips_scheduler.png'}/>
+                        <img style={{height:48,width:48,verticalAlign:'middle'}} src={Constants.assets+'/more_trips_scheduler.png'}/>
                         <span style={{marginLeft:'48px'}}>More Live Trips</span>
                     </span>
             </div>
